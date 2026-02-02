@@ -1,6 +1,6 @@
-﻿using WhiteSoft.Handlers;
+﻿using SafeSoft.Handlers;
 
-namespace WhiteSoft.Models
+namespace SafeSoft.Models
 {
     public interface ISecurityModel { }
     public static class SecurityModelExtensions

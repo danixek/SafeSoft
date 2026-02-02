@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using WhiteSoft.Models;
-using WhiteSoft.Services;
+using SafeSoft.Models;
+using SafeSoft.Services;
 using ConfigurationManager = System.Configuration.ConfigurationManager;
 
-namespace WhiteSoft.Controllers
+namespace SafeSoft.Controllers
 {
     public class AuthController : Controller
     {
@@ -321,7 +321,7 @@ namespace WhiteSoft.Controllers
             }
 
             var email = await _userManager.GetEmailAsync(user);
-            var totpUri = $"otpauth://totp/{ConfigurationManager.AppSettings["WhiteSoft"]}:{email}?secret={getKey}&issuer={ConfigurationManager.AppSettings["WhiteSoft"]}&digits=6";
+            var totpUri = $"otpauth://totp/{ConfigurationManager.AppSettings["SafeSoft"]}:{email}?secret={getKey}&issuer={ConfigurationManager.AppSettings["SafeSoft"]}&digits=6";
             
             // QR code - by QRCoder
             using var qrGenerator = new QRCoder.QRCodeGenerator();

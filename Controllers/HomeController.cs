@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WhiteSoft.Controllers
+namespace SafeSoft.Controllers
 {
     public class HomeController : Controller
     {

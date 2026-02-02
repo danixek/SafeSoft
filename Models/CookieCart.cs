@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace WhiteSoft.Models
+namespace SafeSoft.Models
 {
     public class CookieCart
     {

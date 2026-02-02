@@ -1,6 +1,6 @@
-﻿using WhiteSoft.Models;
+﻿using SafeSoft.Models;
 
-namespace WhiteSoft.Services
+namespace SafeSoft.Services
 {
     public class LogService : ILogService
     {

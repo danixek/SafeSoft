@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WhiteSoft.Models;
-using WhiteSoft.Services;
+using SafeSoft.Models;
+using SafeSoft.Services;
 
-namespace WhiteSoft.Controllers
+namespace SafeSoft.Controllers
 {
     [Authorize(Roles = "superadmin")]
     public class ProductsController : Controller

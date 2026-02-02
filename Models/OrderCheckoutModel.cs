@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
-namespace WhiteSoft.Models
+namespace SafeSoft.Models
 {
     public class OrderCheckoutModel
     {

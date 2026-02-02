@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using WhiteSoft.Models;
+using SafeSoft.Models;
 
 namespace PojistakNET.Data
 {

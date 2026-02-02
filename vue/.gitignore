@@ -12,10 +12,6 @@ dist
 dist-ssr
 *.local
 
-obj
-bin
-appsettings.json
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

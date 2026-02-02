@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace WhiteSoft.Handlers
+namespace SafeSoft.Handlers
 {
     public static class Security
     {

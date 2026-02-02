@@ -1,4 +1,4 @@
-﻿namespace WhiteSoft.Services
+﻿namespace SafeSoft.Services
 {
     public interface ILogService
     {

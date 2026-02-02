@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WhiteSoft</title>
+    <title>@ViewData["Title"] - SafeSoft</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
-    <link rel="icon" type="image/x-icon" href="~/img/logo/whitesoft_favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="~/img/logo/safesoft_favicon.ico" />
 
 </head>
 
@@ -66,9 +66,7 @@
                 <!-- Brand: logo + název -->
                 <a class="d-flex align-items-center navbar-brand me-4 ms-3 text-decoration-none me-auto m-1" asp-area=""
                    asp-controller="Home" asp-action="Index">
-                    <img src="~/img/logo/whitesoft_logo_mini.png" alt="Logo WhiteSoft"
-                         style="height: 25px; width: 35px object-fit: contain; margin-right: 0.3rem;">
-                    <span class="fw-semibold fs-5 logo-name"><strong class="bold-blue">White</strong>Soft</span>
+                    <span class="fw-semibold fs-5 ms-5 logo-name"><strong class="bold-blue">Safe</strong>Soft</span>
                 </a>
 
                 <!-- Right Actions -->
@@ -87,7 +85,7 @@
 
                         <a class="nav-link" asp-controller="orders" asp-action="cart">
                             <i class="bi bi-cart"></i> Košík
-                            <span id="cartCount" class="badge bg-secondary">@cartCount</span>
+                            <span class="badge bg-secondary">@cartCount</span>
                         </a>
                     </li>
                     @if (User.Identity?.IsAuthenticated ?? false)
@@ -196,7 +194,7 @@
             @RenderBody()
         </main>
     </div>
-    <partial name="_LoginPartial" model='new WhiteSoft.Models.LoginViewModel { Email = "", Password = "" }' />
+    <partial name="_LoginPartial" model='new SafeSoft.Models.LoginViewModel { Email = "", Password = "" }' />
 
     <footer id="contact" class="mt-auto py-5 secondary">
         <div class="container footer-content">
@@ -223,14 +221,14 @@
                     </p>
                     <a href="https://maps.google.com" class="link-muted">Zobrazit na mapě</a>
                     <a asp-controller="home" asp-action="contacts" class="link-muted">Další pobočky</a>
-                    <br />© @DateTime.Now.Year Whitesoft s. r. o.<br />
+                    <br />© @DateTime.Now.Year SafeSoft s. r. o.<br />
                 </div>
                 <div class="other-info col-6">
                     <dl>
                         <dt>Tel:</dt>
                         <dd><a href="tel:+420800880088">800 88 00 88</a></dd>
                         <dt>Email:</dt>
-                        <dd><a href="mailto:whitesoft@whitesoft.eu" class="link-muted">whitesoft@whitesoft.eu</a></dd>
+                        <dd><a href="mailto:SafeSoft@SafeSoft.eu" class="link-muted">SafeSoft@SafeSoft.eu</a></dd>
                         <dt>Datová schránka:</dt>
                         <dd>2umtb2d</dd>
                     </dl>
@@ -240,11 +238,12 @@
         </div>
     </footer>
 
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/theme-toggler.js" asp-append-version="true"></script>
     <script src="~/js/sidebar.js"></script>
-    <script src="~/js/cartCount.js" asp-append-version="true"></script>
+    <!-- <script src="~/js/cartCount.js" asp-append-version="true"></script> -->
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

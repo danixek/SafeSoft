@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WhiteSoft.Models;
+using SafeSoft.Models;
 
-namespace WhiteSoft.Models;
+namespace SafeSoft.Models;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {

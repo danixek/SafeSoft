@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject UserManager<ApplicationUser> UserManager
-@model WhiteSoft.Models.CartUserViewModel
+@model SafeSoft.Models.CartUserViewModel
 @{
     ViewData["Title"] = "Košík";
     var user = User.Identity!.IsAuthenticated ? UserManager.GetUserAsync(User).Result : null;
@@ -8,7 +8,7 @@
 
 <h2>Váš košík<span id="cartEmpty"></span></h2>
 
-<div>
+<div id="load-cart">
     <form method="post" asp-action="Checkout" asp-controller="ordersApi">
         <table class="table table-striped table-bordered text-center">
             <thead class="table-dark">
@@ -20,7 +20,7 @@
                     <th>Smazat</th>
                 </tr>
             </thead>
-            <tbody id="cartContainer">
+            <tbody>
                 <!-- tady se JS dynamicky přidávají řádky -->
                 @foreach (var item in Model.Cart)
                 {
@@ -58,4 +58,4 @@
     </form>
 </div>
 
-<script src="~/js/loadCart.js"></script>
+@* <script src="~/js/loadCart.js"></script> *@

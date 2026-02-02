@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WhiteSoft.Models;
+using SafeSoft.Models;
 
 #nullable disable
 
-namespace WhiteSoft.Migrations
+namespace SafeSoft.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -155,7 +155,7 @@ namespace WhiteSoft.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.ApplicationUser", b =>
+            modelBuilder.Entity("SafeSoft.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -228,7 +228,7 @@ namespace WhiteSoft.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.LogEntry", b =>
+            modelBuilder.Entity("SafeSoft.Models.LogEntry", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -259,7 +259,7 @@ namespace WhiteSoft.Migrations
                     b.ToTable("LogEntries", (string)null);
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.Order", b =>
+            modelBuilder.Entity("SafeSoft.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -286,7 +286,7 @@ namespace WhiteSoft.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.OrderItem", b =>
+            modelBuilder.Entity("SafeSoft.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -321,7 +321,7 @@ namespace WhiteSoft.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.Product", b =>
+            modelBuilder.Entity("SafeSoft.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -423,7 +423,7 @@ namespace WhiteSoft.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("WhiteSoft.Models.ApplicationUser", null)
+                    b.HasOne("SafeSoft.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -432,7 +432,7 @@ namespace WhiteSoft.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("WhiteSoft.Models.ApplicationUser", null)
+                    b.HasOne("SafeSoft.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -447,7 +447,7 @@ namespace WhiteSoft.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WhiteSoft.Models.ApplicationUser", null)
+                    b.HasOne("SafeSoft.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -456,16 +456,16 @@ namespace WhiteSoft.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("WhiteSoft.Models.ApplicationUser", null)
+                    b.HasOne("SafeSoft.Models.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("WhiteSoft.Models.OrderItem", b =>
+            modelBuilder.Entity("SafeSoft.Models.OrderItem", b =>
                 {
-                    b.HasOne("WhiteSoft.Models.Order", "Order")
+                    b.HasOne("SafeSoft.Models.Order", "Order")
                         .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)

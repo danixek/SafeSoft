@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text.Json;
-using WhiteSoft.Models;
-using WhiteSoft.Services;
+using SafeSoft.Models;
+using SafeSoft.Services;
 using X.PagedList;
 
-namespace WhiteSoft.Controllers
+namespace SafeSoft.Controllers
 {
     [ApiController]
     [Route("api/orders")]

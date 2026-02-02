@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using PojistakNET.Data;
 using System.Configuration;
 using System.Globalization;
-using WhiteSoft.Models;
-using WhiteSoft.Services;
+using SafeSoft.Models;
+using SafeSoft.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

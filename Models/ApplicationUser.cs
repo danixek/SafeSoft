@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.ComponentModel.DataAnnotations;
-using WhiteSoft.Handlers;
+using SafeSoft.Handlers;
 
-namespace WhiteSoft.Models
+namespace SafeSoft.Models
 {
     /// <summary>
     /// user model for authentication and authorization
