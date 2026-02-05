@@ -24,7 +24,7 @@
     <li>Přihlášení a odhlášení uživatele</li>
     <li><strong>Dvoufaktorová autentizace (TOTP)</strong></li>
 
-    ![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
+![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
 
     <li>Vícestránkové menu dostupné všem uživatelům</li>
     <li>
@@ -36,9 +36,9 @@
             <li>volitelné odstranění uživatele</li>
         </ul>
     </li>
-    ![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft5.webp)
 </ul>
 
+![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft5.webp)
 
 <h3>🚀 Funkce nad rámec zadání</h3>
 
