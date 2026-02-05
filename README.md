@@ -14,7 +14,7 @@
     však vychází z vlastního pochopení problému a postupného ověřování v praxi.
 </p>
 
-![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft1.webp)
+![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft1.webp)
 
 <h3>✅ Implementované funkce (dle zadání)</h3>
 
@@ -23,8 +23,11 @@
     <li>Automatické přiřazení role <strong>superadmin</strong> prvnímu registrovanému uživateli</li>
     <li>Přihlášení a odhlášení uživatele</li>
     <li><strong>Dvoufaktorová autentizace (TOTP)</strong></li>
+</ul>
 
-![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
+![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
+
+<ul>
 
     <li>Vícestránkové menu dostupné všem uživatelům</li>
     <li>
@@ -38,7 +41,7 @@
     </li>
 </ul>
 
-![alt text](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft5.webp)
+![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft5.webp)
 
 <h3>🚀 Funkce nad rámec zadání</h3>
 
@@ -58,9 +61,10 @@
         Implementace <strong>košíku objednávek</strong> ukládaného do cookies
         včetně ochrany proti manipulaci s cenami
     </li>
+</ul>
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft2.webp)
-
+<ul>
     <li>
         <strong>Dynamické generování testovacích objednávek</strong> pro
         administrátorské role
@@ -72,10 +76,9 @@
             <li>formuláře se načítají dynamicky (modal dialog)</li>
         </ul>
     </li>
-
-![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft3.webp)
 </ul>
 
+![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft3.webp)
 
 <p>
     Dynamické části aplikace byly zvoleny záměrně jako příležitost
