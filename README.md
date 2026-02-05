@@ -28,7 +28,6 @@
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
 
 <ul>
-
     <li>Vícestránkové menu dostupné všem uživatelům</li>
     <li>
         Administrace uživatelů:
