@@ -1,23 +1,29 @@
 <h2>🧩 Přehled projektu</h2>
 
 <p>
-    Projekt byl vypracován v rámci zadání s důrazem na
-    <strong>kvalitu implementace, bezpečnost a rozšiřitelnost řešení</strong>.
-    Odevzdání proběhlo po uplynutí celé dostupné lhůty záměrně, aby byl prostor
-    na iterace, refaktoring a ověření funkčnosti.
+    SafeSoft je firemní webová aplikace vytvořená v rámci zadání, jehož součástí byla registrace uživatelů, autentizace, administrace a základní e-shop.
 </p>
 
 <p>
-    Při vývoji jsem využíval moderní nástroje včetně
-    <strong>AI asistence (ChatGPT)</strong> jako podpory při hledání řešení a studiu
-    neznámých konceptů. Klíčová rozhodnutí, architektura a finální implementace
-    však vychází z vlastního pochopení problému a postupného ověřování v praxi.
+    Projekt jsem ale nevnímal pouze jako seznam požadovaných funkcí. Zajímalo mě
+    <strong>jak jednotlivé části aplikace dávají smysl jako jeden celek – kdo je používá,
+    jaké má jednotlivý uživatel oprávnění, jak mezi sebou části systému komunikují
+    a kde má být určitá odpovědnost řešena.</strong>
+</p>
+<p>
+    Odevzdání proběhlo až po uplynutí celé dostupné lhůty záměrně. Čas navíc jsem využil především k iteracím,
+    refaktoringu, doplnění bezpečnostních prvků a ověřování, zda navržené řešení skutečně funguje tak, jak jsem zamýšlel.
+</p>
+<p>
+    Při vývoji jsem využíval také <strong>AI asistenci (ChatGPT)</strong> jako podporu při hledání řešení a studiu neznámých konceptů.
+    Klíčová rozhodnutí, architektura a finální implementace však vychází z vlastního pochopení problému a postupného ověřování v praxi.
 </p>
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft1.webp)
 
-<h3>✅ Implementované funkce (dle zadání)</h3>
+<h3>Co měl projekt řešit</h3>
 
+<p>Základní funkcionalita vycházela ze zadání:</p>
 <ul>
     <li>Registrace uživatele (jméno, příjmení, e-mail, heslo)</li>
     <li>Automatické přiřazení role <strong>superadmin</strong> prvnímu registrovanému uživateli</li>
@@ -27,6 +33,7 @@
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft6.webp)
 
+<p>Součástí aplikace je také víceúrovňová práce s uživateli a jejich oprávněními:</p>
 <ul>
     <li>Vícestránkové menu dostupné všem uživatelům</li>
     <li>
@@ -42,12 +49,13 @@
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft5.webp)
 
-<h3>🚀 Funkce nad rámec zadání</h3>
+<h3>🚀 Co jsem řešil nad rámec zadání</h3>
 
+<p>Při vývoji jsem postupně narazil na další otázky, které původní zadání přímo neřešilo.
+    Některé jsem vyřešil implementací, jiné jsem využil jako příležitost lépe pochopit konkrétní část aplikace.</p>
 <ul>
     <li>
-        <strong>Ošetření vstupů proti XSS</strong> s důrazem na čitelnost a
-        udržitelnost kódu
+        <strong>Ošetření vstupů proti XSS</strong> s důrazem na čitelnost a udržitelnost kódu
     </li>
     <li>
         <strong>Logovací systém</strong> dostupný pro roli superadmin
@@ -57,8 +65,7 @@
         <strong>JavaScriptu</strong>
     </li>
     <li>
-        Implementace <strong>košíku objednávek</strong> ukládaného do cookies
-        včetně ochrany proti manipulaci s cenami
+        <strong>Košík objednávek</strong> ukládaný do cookies včetně ochrany proti manipulaci s cenami
     </li>
 </ul>
 
@@ -71,17 +78,17 @@
     <li>
         Administrace produktů (včetně cen) dostupná pouze
         <strong>superadminovi</strong>
-        <ul>
-            <li>formuláře se načítají dynamicky (modal dialog)</li>
-        </ul>
+    </li>
+    <li>
+        Dynamicky načítané formuláře pomocí modal dialogů
     </li>
 </ul>
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft3.webp)
 
 <p>
-    Dynamické části aplikace byly zvoleny záměrně jako příležitost
-    osvojit si práci s klientskou logikou a tokem dat mezi frontendem a backendem.
+    Dynamické části aplikace pro mě nebyly pouze způsobem, jak vytvořit zajímavější UI.
+    Byly také příležitostí pochopit <strong>tok dat mezi klientskou a serverovou částí aplikace a rozdělení odpovědnosti mezi jednotlivé vrstvy</strong>.
 </p>
 
 ![SafeSoft](https://dnx.mzf.cz/assets/portfolio/gallery/safesoft4.webp)
@@ -89,28 +96,50 @@
 <h3>🧠 Architektonická a produktová rozhodnutí</h3>
 
 <p>
-    Některé původní nápady byly v průběhu vývoje
-    <strong>vědomě opuštěny nebo odloženy</strong>, zejména pokud by výrazně navyšovaly
-    komplexitu, neodpovídaly rozsahu zadání nebo by vedly k technicky zavádějícímu
-    řešení.
+    Během vývoje jsem některé původní nápady
+    <strong>vědomě opustil nebo odložil.</strong>.
+</p>
+<p>
+    Nechtěl jsem pouze přidávat další funkcionalitu proto, aby projekt působil rozsáhleji.
+    Zajímalo mě také, zda by nová funkce měla skutečný přínos vzhledem ke komplexitě, kterou by do aplikace přinesla.
 </p>
 
 <p>
-    Koncept interní „sociální sítě“ s údajně „vlastním obsahem“ uživatelů byl
-    opuštěn, jelikož by bez pokročilejší personalizace šlo pouze o obecný feed
-    bez skutečné individualizace. Alternativní řešení (např. personalizované RSS
-    odběry) bylo identifikováno jako možný směr dalšího rozvoje, nikoli jako součást
-    aktuální implementace.
+    Příkladem je původní koncept interní „sociální sítě“ s vlastním obsahem uživatelů.
+    Postupně jsem dospěl k tomu, že bez pokročilejší personalizace by vznikl pouze obecný feed,
+    který by neposkytoval dostatečnou hodnotu oproti své přidané komplexitě.
 </p>
+<p>
+    Jako smysluplnější směr dalšího rozvoje jsem proto identifikoval například <strong>personalizované RSS odběry</strong>,
+    které by umožnily pracovat s obsahem podle skutečných preferencí uživatele.
+</p>
+<p>
+    Pro mě je právě tento způsob rozhodování důležitější než samotné množství implementovaných funkcí:
+    <strong>technické řešení má podle mě smysl tehdy, když odpovídá problému, který má produkt řešit</strong>.
+</p>
+<h3>🔧 Možnosti dalšího rozvoje</h3>
 
-<h3>🔧 Funkce plánované do budoucna</h3>
-
+<p>Některé nápady zůstaly záměrně mimo současný rozsah projektu:</p>
 <ul>
     <li>Stav objednávky</li>
     <li>Filtrování produktů</li>
     <li>Rozšíření práce s obsahem na základě uživatelských preferencí</li>
 </ul>
+<p>
+    Tyto funkce proto vnímám spíše jako možné další směry než jako nedokončené části původního zadání.
+</p>
+<h4>Technologie</h4>
+<ul>
+    <li>C#</li>
+    <li>.NET / ASP.NET</li>
+    <li>Entity Framework</li>
+    <li>JavaScript (s možností přepisu do Vue)</li>
+    <li>HTML/CSS</li>
+    <li>SQL</li>
+</ul>
 
+
+<h3>▶️ Spuštění projektu</h3>
 
 Pro spuštění projektu doporučuji použít pokročilé editory jako Visual Studio Community nebo JetBrains Rider.
 Alternativně lze použít i Visual Studio Code s doinstalovaným rozšířením C# Dev Kit, který nainstaluje .NET SDK včetně nástroje dotnet.
